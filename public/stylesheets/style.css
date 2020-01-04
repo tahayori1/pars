@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font: 1em Tahoma, Arial;
+  /* float: left; */
+}
+
+body {
+  font: 13px Tahoma, Arial;
+  background-color: #65addd;
+ 
+}
+
+form {
+  background-color: white;
+  padding: 4px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* background-color: gray; */
+  /* border-top: 1px gray solid; */
+  box-shadow: 0px 0px 1px 0px black;
+}
+form::after, form::before {
+  
+  padding: 4px;
+  margin: 0px;
+  margin-top: 0px;
+ 
+ 
+  /* font-size: 25px; */
+  /* height: 37px; */
+  display: inline-block;
+  line-height: 2;
+  vertical-align: middle;
+  border: 1px gray solid;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form::before {
+  content: '💬';
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+}
+
+form input {
+  border: 0;
+  /* padding: 13px; */
+  width: calc(100% - 50px);
+  margin: 0 5px;
+  line-height: 3;
+  box-shadow: 0 0 1px grey;
+}
+
+form button {
+  background: #1A237E;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  /* width: 15%; */
+  /* font-size: initial; */
+  float: left;
+}
+
+ul, #messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#messages{
+background-color: #65addd;
+}
+#messages li {
+  max-width: 60%;
+  width: fit-content;
+  background-color: #e2ffc7;
+  border-radius: 6px;
+  padding: 10px;
+  padding-bottom: 5px;
+  /* color: white; */
+  margin: 5px;
+  min-width: 100px;
+}
+
+#messages li.Welcome {
+  max-width: inherit;
+  width: inherit;
+
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  text-align: justify;
+}
+
+#messages li.res {
+  background-color: #fefefe;
+  width: fit-content;
+  /* color: black; */
+  max-width: calc(90% - 10px);
+  margin-right: auto;
+  /* border-bottom-left-radius: 0; */
+}
+
+ul#messages li:last-child {
+  /* color: red; */
+  margin-bottom: 100px;
+}
+
+#messages {
+  margin-bottom: 40px
+}
+
+ul.menu {
+  padding: 0px;
+  margin: 0px;
+}
+form li.link, form li:last-child {
+  /* width: calc(100% - 4px) !important; */
+  /* max-width: 100%; */
+  width: fit-content;
+  min-width: 50px;
+  text-align: center;
+  margin: 2px !important;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #4e7ba6;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+span.note {
+  color: gray;
+  font-size: xx-small;
+}
+
+.you{
+  width: 100%;
+  font-weight: bold;
+  font-size: 9px;
+  margin-bottom: 5px;
+}
+.res .you {
+  color: #F4511E;
+  text-align: left;
+
+}
+
+.req .you {
+  color: #F4511E;
+}
+
+
+div.tme {width: 100%;display: inline-block;text-align: left;color: #ffffffa8;margin-top: 4px;text-shadow: 0 0 0px grey;font-size: 12px;}
+b {
+  font-weight: bold;
+}
+
+ul#messages {
+  display: block;
+  margin-top: 55px;
+}
+
+div#header {
+  background-color: #4e7ba6;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+div#header h1 {
+  color: white;
+  line-height: 50px;
+  margin: 0px;
+  font-size: large;
+  padding-right: 25px;
+}
+
+ul#FirstMenu {
+
+  display: block;
+margin-top: 50px;
+  background-color: white;
+  overflow: hidden;
+  bottom: 0px;
+}
+
+ul#FirstMenu li div.cntent p {
+  display: inline-block;
+  text-align: justify;
+  max-height: 25px;
+  overflow: hidden;
+}
+
+ul#FirstMenu li {
+  background-color: white;
+  height: 84px;
+  border-bottom: 1px #f9f8fa solid;
+  cursor: pointer;
+}
+
+ul#FirstMenu li div.photo {
+  width: 64px;
+  display: inline-block;
+  height: 64px;
+  background-color: #607D8B;
+  border-radius: 100%;
+  margin: 10px;
+  float: right;
+  background: url(/images/parsa_small.png);
+  background-size: contain;
+  box-shadow: 0 0 1px grey;
+}
+
+ul#FirstMenu li div.cntent {
+  display: inline-block;
+  width: calc(100% - 85px);
+  color: #939295;
+}
+
+ul#FirstMenu li div.cntent h2 {
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 10px 0;
+  float: right;
+  width: calc(100% - 60px);
+  overflow: hidden;
+  height: 20px;
+}
+
+ul#FirstMenu li div.cntent span.tme {
+  /* float: left; */
+  width: 40px;
+  display: inline-block;
+  margin: 10px;
+  /* margin: 0 10px; */
+  text-align: left;
+}

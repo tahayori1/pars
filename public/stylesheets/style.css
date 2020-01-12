@@ -15,7 +15,7 @@ body {
 
 #header div.logo {
     width: 44px;
-    display: inline-block;
+    display: block;
     height: 44px;
     background-color: #607D8B;
     border-radius: 100%;
@@ -90,7 +90,6 @@ form input {
     background-color: #fff;
     border-radius: 8px;
     box-sizing: border-box;
-}
 }
 
 form button {
@@ -173,7 +172,7 @@ div.actions .link {
 
 div#messages div.msg:last-child {
     /* color: red; */
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 #messages {

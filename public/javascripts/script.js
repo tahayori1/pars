@@ -143,6 +143,7 @@ var callback = function () {
         }
         return y;
     }
+    
     socket.on('chat', function (msg) {
         msg = msgProcessor(msg);
         var date = new Date(msg.date);

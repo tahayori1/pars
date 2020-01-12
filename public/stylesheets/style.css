@@ -1,245 +1,315 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  direction: rtl;
-  font: 1em Tahoma, Arial;
-  /* float: left; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font: 1em Tahoma, Arial;
+    /* float: left; */
 }
 
 body {
-  font: 13px Tahoma, Arial;
-  background-color: #65addd;
- 
+    font: 13px Tahoma, Arial;
+    background-color: #e5ebef;
+
 }
 
-form {
-  background-color: white;
-  padding: 4px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  /* background-color: gray; */
-  /* border-top: 1px gray solid; */
-  box-shadow: 0px 0px 1px 0px black;
+#header div.logo {
+    width: 44px;
+    display: inline-block;
+    height: 44px;
+    background-color: #607D8B;
+    border-radius: 100%;
+    margin: 3px 7px;
+    float: right;
+    background: url(/images/parsa_small.png);
+    background-size: contain;
+    box-shadow: 0 0 1px grey;
 }
-form::after, form::before {
-  
-  padding: 4px;
-  margin: 0px;
-  margin-top: 0px;
- 
- 
-  /* font-size: 25px; */
-  /* height: 37px; */
-  display: inline-block;
-  line-height: 2;
-  vertical-align: middle;
-  border: 1px gray solid;
-  cursor: pointer;
-  border-radius: 5px;
+
+div#header div.headerCenter h1 {
+    color: white;
+    margin: 6px 60px;
+    margin-bottom: 2px;
+    font-size: 15px;
+    padding: 0;
+    font-weight: bold;
+}
+
+div#header div.headerCenter p {
+    color: #ffffffb8;
+    margin: 0px 60px;
+    font-size: 12px;
+    /* padding: 0; */
+}
+
+
+form {
+    background-color: white;
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* background-color: gray; */
+    /* border-top: 1px gray solid; */
+    box-shadow: 0px 0px 1px 0px black;
+}
+
+form::after,
+form::before {
+
+    padding: 4px;
+    margin: 0px;
+    margin-top: 0px;
+
+
+    /* font-size: 25px; */
+    /* height: 37px; */
+    display: inline-block;
+    line-height: 2;
+    vertical-align: middle;
+    border: 1px gray solid;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 form::before {
-  content: '💬';
-  background-color: transparent;
-  border: none;
-  font-size: 17px;
+    content: '💬';
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
 }
 
 form input {
-  border: 0;
-  /* padding: 13px; */
-  width: calc(100% - 50px);
-  margin: 0 5px;
-  line-height: 3;
-  box-shadow: 0 0 1px grey;
+    padding: 5px;
+    width: calc(100% - 50px);
+    box-shadow: 0 0 0 0.3333px #b5c0c8;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+    border: 1px solid #d9e0e4;
+    background-color: #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
 }
 
 form button {
-  background: #1A237E;
-  border: none;
-  padding: 10px;
-  color: white;
-  border-radius: 5px;
-  /* width: 15%; */
-  /* font-size: initial; */
-  float: left;
+    background: #1A237E;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    /* width: 15%; */
+    /* font-size: initial; */
+    float: left;
 }
 
-ul, #messages {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
-#messages{
-background-color: #65addd;
-}
-#messages li {
-  max-width: 60%;
-  width: fit-content;
-  background-color: #e2ffc7;
-  border-radius: 6px;
-  padding: 10px;
-  padding-bottom: 5px;
-  /* color: white; */
-  margin: 5px;
-  min-width: 100px;
-}
-
-#messages li.Welcome {
-  max-width: inherit;
-  width: inherit;
-
-  border-radius: 5px;
-  padding: 5px;
-  margin: 5px;
-  text-align: justify;
-}
-
-#messages li.res {
-  background-color: #fefefe;
-  width: fit-content;
-  /* color: black; */
-  max-width: calc(90% - 10px);
-  margin-right: auto;
-  /* border-bottom-left-radius: 0; */
-}
-
-ul#messages li:last-child {
-  /* color: red; */
-  margin-bottom: 100px;
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #messages {
-  margin-bottom: 40px
+    background-color: #e5ebef;
+    padding: 5px;
 }
 
-ul.menu {
-  padding: 0px;
-  margin: 0px;
+div.msg {
+    /* color: white; */
+    margin: 5px 0;
+
+
 }
-form li.link, form li:last-child {
-  /* width: calc(100% - 4px) !important; */
-  /* max-width: 100%; */
-  width: fit-content;
-  min-width: 50px;
-  text-align: center;
-  margin: 2px !important;
-  display: inline-block;
-  cursor: pointer;
-  background-color: #4e7ba6;
-  color: white;
-  border-radius: 5px;
-  padding: 5px;
+
+div.res,
+div.req,
+div.actions {
+    min-width: 100px;
+    max-width: 430px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0.3333px #b5c0c8;
+    padding: 10px;
+    padding-bottom: 5px;
 }
+
+
+#messages div.Welcome {
+    max-width: inherit;
+    width: inherit;
+    text-align: justify;
+}
+
+#messages div.req {
+    width: fit-content;
+    background-color: #e2ffc7;
+    border-bottom-right-radius: 0px !important;
+}
+
+#messages div.res {
+    background-color: #fefefe;
+    border-top-left-radius: 0px !important;
+    margin-right: auto;
+}
+
+#messages div.actions {
+    border: none;
+    margin-right: auto;
+    box-shadow: 0 0 0;
+    padding: 0px;
+}
+
+div.actions .link {
+    background-color: #b5c0c8;
+    border-radius: 10px;
+    margin: 2px 0;
+    text-align: center;
+    color: white;
+    line-height: 21px;
+    padding: 5px;
+}
+
+
+div#messages div.msg:last-child {
+    /* color: red; */
+    margin-bottom: 100px;
+}
+
+#messages {
+    margin-bottom: 40px
+}
+
+div.menu {
+    padding: 0px;
+    margin: 0px;
+}
+
+form li.link,
+form li:last-child {
+    /* width: calc(100% - 4px) !important; */
+    /* max-width: 100%; */
+    width: fit-content;
+    min-width: 50px;
+    text-align: center;
+    margin: 2px !important;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #4e7ba6;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 span.note {
-  color: gray;
-  font-size: xx-small;
+    color: gray;
+    font-size: xx-small;
 }
 
-.you{
-  width: 100%;
-  font-weight: bold;
-  font-size: 9px;
-  margin-bottom: 5px;
+.you {
+    width: 100%;
+    font-weight: bold;
+    font-size: 9px;
+    margin-bottom: 5px;
 }
+
 .res .you {
-  color: #F4511E;
-  text-align: left;
+    color: #F4511E;
+    text-align: left;
 
 }
 
 .req .you {
-  color: #F4511E;
+    color: #F4511E;
 }
 
 
-div.tme {width: 100%;display: inline-block;text-align: left;color: #ffffffa8;margin-top: 4px;text-shadow: 0 0 0px grey;font-size: 12px;}
+div.tme {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    color: #ffffffa8;
+    margin-top: 4px;
+    text-shadow: 0 0 0px grey;
+    font-size: 12px;
+}
+
 b {
-  font-weight: bold;
+    font-weight: bold;
 }
 
-ul#messages {
-  display: block;
-  margin-top: 55px;
+div#messages {
+    display: block;
+    margin-top: 55px;
 }
 
 div#header {
-  background-color: #4e7ba6;
-  height: 50px;
-  position: fixed;
-  top: 0;
-  width: 100%;
+    background-color: #4e7ba6;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-div#header h1 {
-  color: white;
-  line-height: 50px;
-  margin: 0px;
-  font-size: large;
-  padding-right: 25px;
+
+div#FirstMenu {
+
+    display: block;
+    margin-top: 50px;
+    background-color: white;
+    overflow: hidden;
+    bottom: 0px;
 }
 
-ul#FirstMenu {
-
-  display: block;
-margin-top: 50px;
-  background-color: white;
-  overflow: hidden;
-  bottom: 0px;
+div#FirstMenu div div.cntent p {
+    display: inline-block;
+    text-align: justify;
+    max-height: 25px;
+    overflow: hidden;
 }
 
-ul#FirstMenu li div.cntent p {
-  display: inline-block;
-  text-align: justify;
-  max-height: 25px;
-  overflow: hidden;
+div#FirstMenu div {
+    background-color: white;
+    height: 84px;
+    border-bottom: 1px #f9f8fa solid;
+    cursor: pointer;
 }
 
-ul#FirstMenu li {
-  background-color: white;
-  height: 84px;
-  border-bottom: 1px #f9f8fa solid;
-  cursor: pointer;
+div#FirstMenu div div.photo {
+    width: 64px;
+    display: inline-block;
+    height: 64px;
+    background-color: #607D8B;
+    border-radius: 100%;
+    margin: 10px;
+    float: right;
+    background: url(/images/parsa_small.png);
+    background-size: contain;
+    box-shadow: 0 0 1px grey;
 }
 
-ul#FirstMenu li div.photo {
-  width: 64px;
-  display: inline-block;
-  height: 64px;
-  background-color: #607D8B;
-  border-radius: 100%;
-  margin: 10px;
-  float: right;
-  background: url(/images/parsa_small.png);
-  background-size: contain;
-  box-shadow: 0 0 1px grey;
+div#FirstMenu div div.cntent {
+    display: inline-block;
+    width: calc(100% - 85px);
+    color: #939295;
 }
 
-ul#FirstMenu li div.cntent {
-  display: inline-block;
-  width: calc(100% - 85px);
-  color: #939295;
+div#FirstMenu div div.cntent h2 {
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px 0;
+    float: right;
+    width: calc(100% - 60px);
+    overflow: hidden;
+    height: 20px;
 }
 
-ul#FirstMenu li div.cntent h2 {
-  color: black;
-  font-size: 13px;
-  font-weight: bold;
-  margin: 10px 0;
-  float: right;
-  width: calc(100% - 60px);
-  overflow: hidden;
-  height: 20px;
-}
-
-ul#FirstMenu li div.cntent span.tme {
-  /* float: left; */
-  width: 40px;
-  display: inline-block;
-  margin: 10px;
-  /* margin: 0 10px; */
-  text-align: left;
+div#FirstMenu div div.cntent span.tme {
+    /* float: left; */
+    width: 40px;
+    display: inline-block;
+    margin: 10px;
+    /* margin: 0 10px; */
+    text-align: left;
 }

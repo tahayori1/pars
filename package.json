@@ -12,12 +12,9 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "http-proxy": "^1.18.0",
-    "jade": "~1.11.0",
     "morgan": "~1.9.1",
     "openssl": "^1.1.0",
     "socket.io": "^2.3.0",
     "socket.io-client": "^2.3.0",
-    "socks-proxy-agent": "^4.0.2",
-    "socksv5": "0.0.6"
   }
 }

@@ -150,7 +150,7 @@ var reports = {}
 
 function processFile(content) {
 
-    content = content.split('\r\n');
+    content = content.split('\n');
     i = -1;
     content.forEach((x) => {
 

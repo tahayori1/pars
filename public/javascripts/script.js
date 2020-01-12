@@ -151,7 +151,7 @@ var callback = function () {
         log(msg);
         if (msg != undefined) {
             var tx = Object.keys(msg)[0];
-            if (msg[tx].type) {
+            if (msg[tx],msg[tx].type) {
                 msg = msg[tx];
             } else if (msg.type) {
                 msg = msg;

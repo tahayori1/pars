@@ -173,7 +173,7 @@ div.actions .link {
 
 div#messages div.msg:last-child {
     /* color: red; */
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 #messages {
